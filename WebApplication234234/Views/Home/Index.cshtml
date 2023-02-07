@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model FormsTagHelper.ViewModels.YgoDataViewModel;
+
+
+
+<form asp-controller="Home" asp-action="CreateDeck" method="post">
+    
+    <h1 class="customheader">Url Deck</h1>
+   <input asp-for="DeckUrl" /> <br />
+    <h1 class="customheader">Name Deck</h1>
+   <input asp-for="DeckName" /><br />
+   
+    <button type="submit">Add Deck</button>
+</form>
+
